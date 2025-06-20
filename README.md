@@ -7,12 +7,12 @@
 </p>
 
 
-## 🌐 Project Overview
+##  Project Overview
 
 Medinova offers a smart, all-in-one platform for managing healthcare appointments and initial consultations.  
 It blends traditional healthcare systems with modern AI technology to improve user experience and accessibility.
 
-## 🔧 Features
+##  Features
 
 ###  Homepage
 A clean, welcoming landing page that promotes health awareness and guides users to explore core features.
