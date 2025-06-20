@@ -1,1 +1,1 @@
-# AI-Powered-Medical-Assistant
+# Medinova
