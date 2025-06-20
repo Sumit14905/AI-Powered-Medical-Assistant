@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Medinova</title>
+    <meta name="description" content="Book your appointment with our expert doctors at Medinova">
+    <link rel="stylesheet" href="Appointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <header>
+        <div class="nav_bar">
+            <div class="nav_bar_box1">
+                <div class="nav_bar_logo">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="nav_bar_logotext">
+                    <h1 class="brand_title">Medinova </h1>
+                    <p class="brand_subtitle">AI-Powered Medical Assistant</p>
+                </div>
+            </div>
+            
+            <div class="nav_bar_spacing"></div>
+        
+            <div class="nav_bar_box2">
+                <div class="nav_bar_home nav_button">
+                    <a href="index.html"><i class="fa-solid fa-house"></i>
+                    Home</a>
+                </div>
+                <div class="nav_bar_Doctors nav_button">
+                    <a href="Doctors.html"><i class="fas fa-stethoscope"></i>
+                    Our Doctors</a>
+                </div>
+                <div class="nav_bar_appointment nav_button active">
+                    <a href="Appointment.html"><i class="fa-regular fa-calendar-check"></i>
+                    Appointments</a>
+                </div>
+                <div class="nav_bar_prescription nav_button">
+                    <a href="AI prescription.html"><i class="fas fa-brain"></i>
+                    AI Prescription</a>
+                </div>
+                <div class="nav_bar_Staff nav_button">
+                    <a href="Staff.html"><i class="fa-solid fa-user-doctor"></i>
+                    Staff Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <div class="appointment_header">
+            <h1 class="appointment_title">Book Your Appointment</h1>
+            <p class="appointment_subtitle">Schedule a consultation with our expert medical professionals</p>
+        </div>
+
+        <div class="voice_assistant_container">
+            <div class="voice_assistant_card">
+                <div class="voice_assistant_header">
+                    <i class="fa-solid fa-microphone"></i>
+                    <h3>Voice Assistant</h3>
+                </div>
+                <p class="voice_assistant_text">Click the microphone and tell us your appointment details. Our AI will automatically fill the form for you!</p>
+                <button type="button" class="voice_button" id="voiceButton">
+                    <i class="fa-solid fa-microphone" id="micIcon"></i>
+                    <span id="voiceButtonText">Start Speaking</span>
+                </button>
+                <div class="voice_status" id="voiceStatus"></div>
+                <div class="voice_transcript" id="voiceTranscript"></div>
+            </div>
+        </div>
+        <div class="appointment_form_container">
+            <form class="appointment_form" id="appointmentForm" action="Appointment.php" method="POST">
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="fullName" class="form_label">
+                            <i class="fa-solid fa-user"></i>
+                            Full Name
+                        </label>
+                        <input type="text" id="fullName" name="fullName" class="form_input" required>
+                    </div>
+                    
+                    <div class="form_group">
+                        <label for="email" class="form_label">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email
+                        </label>
+                        <input type="email" id="email" name="email" class="form_input" required>
+                    </div>
+                </div>
+
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="phone" class="form_label">
+                            <i class="fa-solid fa-phone"></i>
+                            Phone Number
+                        </label>
+                        <input type="tel" id="phone" name="phone" class="form_input" required>
+                    </div>
+                    
+                    <div class="form_group">
+                        <label for="date" class="form_label">
+                            <i class="fa-regular fa-calendar"></i>
+                            Preferred Date
+                        </label>
+                        <input type="date" id="date" name="date" class="form_input" required>
+                    </div>
+                </div>
+
+                <div class="form_row">
+                    <div class="form_group">
+                        <label for="time" class="form_label">
+                            <i class="fa-regular fa-clock"></i>
+                            Preferred Time
+                        </label>
+                        <select id="time" name="time" class="form_select" required>
+                            <option value="">Select time</option>
+                            <option value="09:00">09:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="14:00">02:00 PM</option>
+                            <option value="15:00">03:00 PM</option>
+                            <option value="16:00">04:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form_group">
+                        <label for="doctor" class="form_label">
+                            <i class="fas fa-stethoscope"></i>
+                            Doctor
+                        </label>
+                        <select id="doctor" name="doctor" class="form_select" required>
+                            <option value="">Select doctor</option>
+                            <option value="dr-sarah">Dr. Sarah Johnson - Cardiologist</option>
+                            <option value="dr-michael">Dr. Michael Chen - Neurologist</option>
+                            <option value="dr-emily">Dr. Emily Rodriguez - Pediatrician</option>
+                            <option value="dr-david">Dr. David Thompson - Orthopedic Surgeon</option>
+                            <option value="dr-lisa">Dr. Lisa Martinez - Dermatologist</option>
+                            <option value="dr-james">Dr. James Wilson - Psychiatrist</option>
+                            <option value="dr-maria">Dr. Maria Garcia - Gynecologist</option>
+                            <option value="dr-robert">Dr. Robert Davis - General Physician</option>
+                            <option value="dr-jennifer">Dr. Jennifer Brown - Ophthalmologist</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form_group_full">
+                    <label for="reason" class="form_label">
+                        <i class="fa-solid fa-comment-medical"></i>
+                        Reason for Visit
+                    </label>
+                    <textarea id="reason" name="reason" rows="4" class="form_textarea" placeholder="Please describe your symptoms or reason for consultation..."></textarea>
+                </div>
+
+                <button type="submit" class="submit_button" name="submitButton">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    Book Appointment
+                </button>
+            </form>
+        </div>
+        </main>
+
+    <script src="Appointment.js"></script>
+</body>
+</html>

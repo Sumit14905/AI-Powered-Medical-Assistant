@@ -1,0 +1,514 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #ecfdf5 100%);
+}
+
+/*Navigation Bar Starts*/
+
+.nav_bar{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dbeafe;
+}
+
+.nav_bar_box1{
+    height: 100px;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_bar_box2{
+    height: 100px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    font-size: 0.85rem;
+    gap: 35px;
+    margin-right: 5%;
+}
+
+.nav_bar_spacing{
+    width: 20%;
+    height: 100%;
+}
+
+.nav_bar_logo{
+    font-size: 2rem;
+    height: 45%;
+    border-radius: 15%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2563eb, #059669);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.brand_title{
+    font-weight: 700;
+    background: linear-gradient(90deg, #1d4ed8, #059669);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+.brand_subtitle{
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+/** Navigation button effects starts **/
+.nav_button {
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.nav_button a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+.nav_button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #1d4ed8, #059669);
+    transition: left 0.4s ease;
+    z-index: 1;
+}
+
+.nav_button:hover::before {
+    left: 0;
+}
+
+.nav_button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(29, 78, 216, 0.3);
+}
+
+.nav_button:hover a {
+    color: white;
+}
+
+.nav_button:active {
+    transform: translateY(0);
+}
+
+/* Home button special styling */
+.nav_bar_home a {
+    background: linear-gradient(90deg, #1d4ed8, #059669);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.nav_bar_home:hover a {
+    -webkit-text-fill-color: white;
+    background: none;
+}
+
+/*Navigation button effects ends*/
+
+
+/*body starts*/
+
+.upper_main1{
+    height: 400px;
+    margin-top: 155px;
+}
+
+.upper_main1_top{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(90deg, #1d4ed8, #059669);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.upper_main1_middle{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 32%;
+    font-size: 1rem;
+}
+
+.upper_main1_bottom{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7.5%;
+}
+
+.book_appointment{
+    height: 35%;
+    width: fit-content; 
+    border: 2px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5%;
+    color: white;
+    background-color: #0f1111;
+}
+
+.meet_our_doctors{
+    height: 35%;
+    width: fit-content;
+    border: 2px solid #0F1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    color: #0F1111;
+}
+
+/* Book Appointment Button Hover Effects */
+.book_appointment {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.book_appointment::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #1d4ed8, #059669);
+    transition: left 0.4s ease;
+    z-index: 1;
+}
+
+.book_appointment:hover::before {
+    left: 0;
+}
+
+.book_appointment:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(15, 17, 17, 0.4);
+    background-color: #1f2937;
+}
+
+.book_appointment a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_appointment h3 {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+/* Book Appointment Button Hover Effects ends*/
+
+/* Meet Our Doctors Button Hover Effects */
+.meet_our_doctors {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.meet_our_doctors::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #1d4ed8, #059669);
+    transition: left 0.4s ease;
+    z-index: 1;
+}
+
+.meet_our_doctors:hover::before {
+    left: 0;
+}
+
+.meet_our_doctors:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(15, 17, 17, 0.3);
+    background-color: #0F1111;
+    color: white;
+}
+
+.meet_our_doctors a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meet_our_doctors h3 {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.meet_our_doctors:hover h3 {
+    color: white;
+}
+
+/* Active states for better user feedback */
+.book_appointment:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.meet_our_doctors:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+/* Meet Our Doctors Button Hover Effects */
+
+/*main box 2 starts*/
+.upper_main2{
+    height: 90px; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.upper_main2_line1{
+    text-align: center;
+    height: 60%;
+}
+
+.upper_main2_line1 h2{
+    font-size: 1.85rem;
+    color: #0F1111;
+}
+
+.upper_main2_line2{
+    text-align: center;
+    height: 40%;
+    color: #6c6c6c;
+}
+/*main box 2 ends*/
+
+
+/*main box 3 starts*/
+.upper_main3{
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    margin-top: 50px;
+}
+
+
+.upper_main3_box1{
+    height: 100%;
+    width: 22%;
+    border: border-box;
+    padding: 1.5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dbeafe;
+    
+}
+.upper_main3_box1_logo{
+    height: 30%;
+    font-size: 2.2rem;
+    color: #1d4ed8;
+}
+.upper_main3_box1_heading{
+    color: #0F1111;
+}
+.upper_main3_box1_text{
+    color: #7b7b7b;
+    margin-top: 7%;
+}
+
+
+.upper_main3_box2{
+    height: 100%;
+    width: 22%;
+    border: border-box;
+    padding: 1.5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dbeafe;
+}
+.upper_main3_box2_logo{
+    height: 30%;
+    font-size: 2.2rem;
+    color: #059669;
+}
+.upper_main3_box2_heading{
+    color: #0F1111;
+}
+.upper_main3_box2_text{
+    color: #7b7b7b;
+    margin-top: 7%;
+}
+
+
+.upper_main3_box3{
+    height: 100%;
+    width: 22%;
+    border: border-box;
+    padding: 1.5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dbeafe;
+}
+.upper_main3_box3_logo{
+    height: 30%;
+    font-size: 2.2rem;
+    color: rgb(213, 64, 124);
+}
+.upper_main3_box3_heading{
+    color: #0F1111;
+}
+.upper_main3_box3_text{
+    color: #7b7b7b;
+    margin-top: 7%;
+}
+/*main3 box ends*/
+
+/*main4 box ends*/
+.upper_main4{
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(135deg, #2563eb, #059669);
+    margin-top: 70px;
+}
+
+.upper_main4_box1{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+}
+.upper_main4_box1_line1{
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.upper_main4_box1_line2{
+    color: rgb(228, 227, 227);
+    font-weight: 550;
+}
+
+.upper_main4_box2{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+}
+.upper_main4_box2_line1{
+    color: white;
+    font-weight: 700;
+}
+.upper_main4_box2_line2{
+    color: rgb(228, 227, 227);
+    font-weight: 550;
+}
+
+.upper_main4_box3{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+}
+.upper_main4_box3_line1{
+    color: white;
+    font-weight: 700;
+}
+.upper_main4_box3_line2{
+    color: rgb(228, 227, 227);
+    font-weight: 550;
+}
+

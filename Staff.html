@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Medinova</title>
+    <meta name="description" content="Get in touch with Medinova - Your AI-powered medical assistant. Contact us for appointments, inquiries, and support.">
+    <link rel="stylesheet" href="Staff.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <!--header-->
+    <header>
+        <div class="nav_bar">
+            <div class="nav_bar_box1">
+                <div class="nav_bar_logo">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="nav_bar_logotext">
+                    <h1 class="brand_title">Medinova </h1>
+                    <p class="brand_subtitle">AI-Powered Medical Assistant</p>
+                </div>
+            </div>
+            
+            <div class="nav_bar_spacing"></div>
+        
+            <div class="nav_bar_box2">
+                <div class="nav_bar_home nav_button">
+                    <a href="index.html"><i class="fa-solid fa-house"></i>
+                    Home</a>
+                </div>
+                <div class="nav_bar_Doctors nav_button">
+                    <a href="Doctors.html"><i class="fas fa-stethoscope"></i>
+                    Our Doctors</a>
+                </div>
+                <div class="nav_bar_appointment nav_button">
+                    <a href="Appointment.html"><i class="fa-regular fa-calendar-check"></i>
+                    Appointments</a>
+                </div>
+                <div class="nav_bar_prescription nav_button">
+                    <a href="AI prescription.html"><i class="fas fa-brain"></i>
+                    AI Prescription</a>
+                </div>
+                <div class="nav_bar_contact nav_button active">
+                    <a href="Staff.html"><i class="fa-solid fa-phone"></i>
+                    Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header part completed-->
+    
+    <!--Contact page content starts-->
+    <main>
+        <div class="contact_hero">
+            <div class="contact_hero_content">
+                <h1 class="contact_hero_title">Get In Touch</h1>
+                <h2 class="contact_hero_subtitle">We're Here To Help</h2>
+                <p class="contact_hero_description">Have questions about our services? Need to schedule an appointment? Our team is ready to assist you with all your healthcare needs.</p>
+            </div>
+        </div>
+
+        <div class="contact_main_content">
+            <div class="contact_info_section">
+                <div class="contact_info_card">
+                    <div class="contact_info_icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567</p>
+                    <p>24/7 Emergency Hotline</p>
+                </div>
+
+                <div class="contact_info_card">
+                    <div class="contact_info_icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@medinova.com</p>
+                    <p>support@medinova.com</p>
+                </div>
+
+                <div class="contact_info_card">
+                    <div class="contact_info_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Healthcare Avenue</p>
+                    <p>Medical District, MD 12345</p>
+                </div>
+
+                <div class="contact_info_card">
+                    <div class="contact_info_icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p>Mon-Fri: 8:00 AM - 8:00 PM</p>
+                    <p>Sat-Sun: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+
+            <div class="contact_form_section">
+                <div class="contact_form_container">
+                    <h2>Send Us A Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form class="contact_form">
+                        <div class="form_row">
+                            <div class="form_group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form_group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form_row">
+                            <div class="form_group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form_group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="appointment">Appointment Request</option>
+                                <option value="emergency">Emergency</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please describe how we can help you..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit_button">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="emergency_section">
+            <div class="emergency_content">
+                <div class="emergency_icon">
+                    <i class="fa-solid fa-ambulance"></i>
+                </div>
+                <h2>Medical Emergency?</h2>
+                <p>If this is a medical emergency, please call 911 immediately or visit your nearest emergency room.</p>
+                <div class="emergency_buttons">
+                    <a href="tel:911" class="emergency_call">
+                        <i class="fa-solid fa-phone"></i>
+                        Call 911
+                    </a>
+                    <a href="tel:+15551234567" class="emergency_hotline">
+                        <i class="fa-solid fa-hospital"></i>
+                        Our Emergency Line
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

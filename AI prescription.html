@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prescription Assistant - Medinova</title>
+    <meta name="description" content="Describe your symptoms and get AI-powered health recommendations">
+    <link rel="stylesheet" href="AI prescription.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--header-->
+        
+    <header>
+        <div class="nav_bar">
+            <div class="nav_bar_box1">
+                <div class="nav_bar_logo">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="nav_bar_logotext">
+                    <h1 class="brand_title">Medinova </h1>
+                    <p class="brand_subtitle">AI-Powered Medical Assistant</p>
+                </div>
+            </div>
+            
+            <div class="nav_bar_spacing"></div>
+        
+            <div class="nav_bar_box2">
+                <div class="nav_bar_home nav_button">
+                    <a href="index.html"><i class="fa-solid fa-house"></i>
+                    Home</a>
+                </div>
+                <div class="nav_bar_Doctors nav_button">
+                    <a href="Doctors.html"><i class="fas fa-stethoscope"></i>
+                    Our Doctors</a>
+                </div>
+                <div class="nav_bar_appointment nav_button">
+                    <a href="Appointment.html"><i class="fa-regular fa-calendar-check"></i>
+                    Appointments</a>
+                </div>
+                <div class="nav_bar_prescription nav_button">
+                    <a href="AI prescription.html"><i class="fas fa-brain"></i>
+                    AI Prescription</a>
+                </div>
+                <div class="nav_bar_contact nav_button active">
+                    <a href="Staff.html"><i class="fa-solid fa-phone"></i>
+                    Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header part completed-->
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <i class="fas fa-prescription-bottle-medical"></i>
+                </div>
+                <h1 class="hero-title">AI Prescription Assistant</h1>
+                <p class="hero-subtitle">Describe your symptoms and get AI-powered health recommendations.</p>
+                <div class="disclaimer-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span>This is for informational purposes only. Always consult with a healthcare professional for proper medical advice.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Application Section -->
+        <section class="app-section">
+            <div class="app-container">
+                <!-- Left Column - Symptom Input -->
+                <div class="input-section">
+                    <h2 class="section-title">Describe Your Problem</h2>
+                    <p class="section-subtitle">Please describe your symptoms, concerns, or health questions:</p>
+                    
+                    <div class="input-container">
+                        <textarea 
+                            id="symptomInput" 
+                            class="symptom-textarea" 
+                            placeholder="e.g., I have been experiencing headaches for the past 3 days, along with mild fever and fatigue..."
+                            rows="8"
+                        ></textarea>
+                    </div>
+                    
+                    <button class="get-recommendations-btn" onclick="getRecommendations()">
+                        <i class="fas fa-paper-plane"></i>
+                        Get AI Recommendations
+                    </button>
+                </div>
+
+                <!-- Right Column - AI Recommendations -->
+                <div class="recommendations-section">
+                    <h2 class="section-title">AI Recommendations</h2>
+                    
+                    <div class="recommendations-container" id="recommendationsContainer">
+                        <div class="empty-state">
+                            <div class="empty-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <p class="empty-text">Enter your symptoms above and click "Get AI Recommendations" to receive personalized health suggestions.</p>
+                        </div>
+                    </div>
+
+                    <div class="loading-state" id="loadingState" style="display: none;">
+                        <div class="loading-spinner">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                        <p>Analyzing your symptoms...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Disclaimer Section -->
+        <section class="disclaimer-section">
+            <div class="disclaimer-container">
+                <h3 class="disclaimer-title">Important Disclaimer</h3>
+                <p class="disclaimer-text">
+                    This AI assistant provides general health information and suggestions only. It is not a substitute for professional 
+                    medical advice, diagnosis, or treatment. Always seek the advice of qualified healthcare providers with any questions 
+                    you may have regarding a medical condition. In case of emergency, contact your local emergency services immediately.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="AI prescription.js"></script>
+</body>
+</html>
